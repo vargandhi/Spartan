@@ -16,7 +16,7 @@ curve25519-dalek = { git="https://github.com/vargandhi/curve25519-dalek.git", br
     "u64_backend",
     "alloc",
 ], default-features = false }
-merlin = { version = "3.0.0", default-features = false }
+merlin = { git="https://github.com/vargandhi/merlin.git", branch="main",default-features = false }
 rand = { version = "0.7.3", features = ["getrandom"], default-features = false }
 digest = { version = "0.8.1", default-features = false }
 sha3 = { version = "0.8.2", default-features = false }
