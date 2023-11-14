@@ -11,7 +11,11 @@ license-file = "LICENSE"
 keywords = ["zkSNARKs", "cryptography", "proofs"]
 
 [dependencies]
-curve25519-dalek = {version = "3.0.0", features = ["serde", "simd_backend"]}
+curve25519-dalek = { git="https://github.com/vargandhi/curve25519-dalek.git", branch="release/3.2", features = [
+    "serde",
+    "u64_backend",
+    "alloc",
+], default-features = false }
 merlin = "3.0.0"
 rand = "0.7.3"
 digest = "0.8.1"
